@@ -1,0 +1,66 @@
+
+#button_container {
+    width : 600px;
+    height : 300px
+}
+.top {
+    font-size : 30
+    align : center
+}
+h1 {    
+    color : blue;
+    font-family: "Times New Roman", Times, serif;
+}
+h2 {
+    color : blue;
+    font-family: "Times New Roman", Times, serif;
+}
+#vis_container{
+    width: 800px;
+    background_color: white;
+    margine: auto;
+}
+#container {
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+}
+#first {
+    width: 600px;
+    float: left;
+    height: 400px;
+    background-color: white;
+    float : left;
+}
+#second {
+    width: 300px;
+    float: left;
+    height: 400px;
+    background-color: white;
+    float : right;
+}
+#clear {
+    clear: both;
+}
+
+
+  table {
+    border-collapse: collapse;
+    border: 2px black solid;
+    font: 12px sans-serif;
+}
+
+td {
+    border: 1px black solid;
+    padding: 5px;
+}
+example {
+    display: flex;
+    flex-direction: column;
+}
+
+.example > .a {order: 1; } /* Will be displayed third  */
+.example > .b {order: 2; } /* Will be displayed second */
+.example > .c {order: 3; }
+.example > .d {order: 4; }
+.example > .e {order: 5; }

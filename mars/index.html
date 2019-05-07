@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Equator Weather Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <body>
+    <div id= 'button_box'>
+      <h1 class= 'top'>Mission to Mars</h1>
+      <button type="button" href = '/scrape' class="btn btn-primary btn-lg btn-block">Scrape</button>
+    </div>
+    <h2>{{mars.news_title}}</h2>
+    <h3>{{mars.news_p}}</h2>
+    <div id = 'second'>
+      <h2> Martian Weather <h2>
+    </div>
+<div class = "example">
+  <div class = 'a'>
+  <div id = 'container'>
+      <div id = 'first'>
+        <h1>Mars Featured Image</h1>
+        <img class = "wrap" src="{{mars.featured_image_url}}" alt = 'City Latitude vs Max Temperature' style = "width:500px;height:400px;">
+      </div>
+      <div id = 'second'>
+        <h2>Mars Facts</h2>
+        <div>{{mars.mars_facts}}
+      </div>
+
+    </div>
+    </div>
+    <div class = 'b'>      
+    <h2> Hemispheres <h2>
+    <div class = 'row'>
+          <div class = 'column'>
+            <img src='{{mars.hemisphere1}}' style="width:100px;height:100px;">
+            <img src='{{mars.hemisphere2}}' style="width:100px;height:100px;">
+          </div>
+          <div class = 'column'>
+            <img src='{{mars.hemisphere3}}' style="width:100px;height:100px;">
+            <img src='{{mars.hemisphere4}}'style="width:100px;height:100px;">
+          </div>
+        </div>
+    
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
